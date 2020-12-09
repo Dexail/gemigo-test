@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/plane.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="Initial react">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/plane.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/plane.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,11 @@
     <property name="ts.external.directory.path" value="D:\OSPaanel\OSPanel\domains\React\gamigo-test\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\assets\img" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,8 +47,16 @@
       <option name="presentableId" value="Default" />
       <updated>1607506130894</updated>
       <workItem from="1607506132009" duration="85000" />
-      <workItem from="1607506227406" duration="3497000" />
+      <workItem from="1607506227406" duration="9087000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial react">
+      <created>1607510855939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607510855939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -55,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial react" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial react" />
   </component>
 </project>
