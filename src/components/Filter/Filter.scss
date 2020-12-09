@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+.transfers__filter{
+  background: $white;
+  padding: 35px 18px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 218px;
+  border-radius: 3px;
+  margin: 0 46px 0 0;
+  &-list{
+    display: flex;
+    flex-direction: column;
+    & > div{
+      margin: 13px 0 0 0;
+    }
+  }
+  h2 {
+    color: $black;
+    margin: 0 0 12px 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  & > p{
+    color: $black;
+    text-align: center;
+    margin: 15px 0 0;
+  }
+}
