@@ -1,7 +1,7 @@
 import React from 'react';
 import {Provider} from "react-redux";
 import store from "./store";
-import Transfers from "./containers/Transfers";
+import {Transfers} from "./components";
 
 function App() {
     return (

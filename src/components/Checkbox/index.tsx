@@ -3,15 +3,16 @@ import * as React from 'react';
 import "./Checkbox.scss"
 
 type Props = {
-    id:string;
-    name:string;
-    changeCheckbox(id: string): void;
+    id:number;
+    value:string;
+    isChecked: boolean;
+    changeFilter(id:number):void;
 };
-const Checkbox = ({id, name, changeCheckbox}: Props) => {
+const Checkbox = ({id, value, isChecked, changeFilter}: Props) => {
     return (
         <>
-            <input type="checkbox" className="checkbox" onChange={(e)=>changeCheckbox(id)} id={id} value={name}/>
-            <label htmlFor={id}>{name}</label>
+            <input type="checkbox" key={id} onClick={(e)=> changeFilter(id)} className="checkbox" checked={isChecked} id={id.toString()} name={value} value={value}/>
+            <label htmlFor={id.toString()}>{value}</label>
         </>
     );
 };

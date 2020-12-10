@@ -1,6 +1,11 @@
 import {combineReducers} from 'redux';
-import ticketsReducer from "./tickets/ticketsReducer";
+import {default as TicketsReducer} from "./tickets/reducer";
+import {default as FiltersReducer} from "./filters/reducer";
 
-const RootReducer  = combineReducers({tickets: ticketsReducer});
+/*const tickets = {
+    data:TicketsReducer
+}*/
+
+const RootReducer  = combineReducers({filters: FiltersReducer, tickets: TicketsReducer});
 
 export default RootReducer

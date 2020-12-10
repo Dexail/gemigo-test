@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="create filter component">
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="create tickets store">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Filter/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Transfers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tickets/actionsTickets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tickets/ticketsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <updated>1607506130894</updated>
       <workItem from="1607506132009" duration="85000" />
       <workItem from="1607506227406" duration="23165000" />
-      <workItem from="1607584267701" duration="12496000" />
+      <workItem from="1607584267701" duration="23373000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607526530293</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create tickets store">
+      <created>1607597853650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607597853650</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +107,7 @@
     <MESSAGE value="Initial react" />
     <MESSAGE value="create transfers component" />
     <MESSAGE value="create filter component" />
-    <option name="LAST_COMMIT_MESSAGE" value="create filter component" />
+    <MESSAGE value="create tickets store" />
+    <option name="LAST_COMMIT_MESSAGE" value="create tickets store" />
   </component>
 </project>
