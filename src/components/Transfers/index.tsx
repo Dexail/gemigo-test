@@ -3,10 +3,10 @@ import TransferField from "./TransferField";
 
 import "./Transfers.scss";
 import {Filter} from "../index";
+import {Tickets} from "../../store/tickets/types";
 
 type Props = {
-    tickets: Array<object>
-
+    tickets: Array<Tickets>
 };
 const Transfers = ({tickets}: Props) => {
     return (
@@ -14,7 +14,15 @@ const Transfers = ({tickets}: Props) => {
             <div className="transfers__content">
                 <Filter/>
                 <div className="transfers__list">
-                    <TransferField/>
+                    {tickets.length > 0 ?
+                        (tickets.map((ticket, index) => {
+                            return (
+                                <TransferField transfers={ticket.transfers}
+                                />
+                            )
+                        }))
+                        :
+                        (<div className="transfers__list-content"><p>Empty List</p></div>)}
                 </div>
             </div>
         </div>

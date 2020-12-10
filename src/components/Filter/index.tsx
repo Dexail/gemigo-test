@@ -10,7 +10,6 @@ interface IFilter {
 
 type Props = {};
 const Filter = (props: Props) => {
-
     const filterList: Array<IFilter> = [
         {
             id: -1,

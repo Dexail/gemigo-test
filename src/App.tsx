@@ -1,13 +1,16 @@
 import React from 'react';
-
-import {Transfers} from "./components";
+import {Provider} from "react-redux";
+import store from "./store";
+import Transfers from "./containers/Transfers";
 
 function App() {
-  return (
-    <div className="App">
-      <Transfers tickets={[]}/>
-    </div>
-  );
+    return (
+        <Provider store={store}>
+            <div className="App">
+                <Transfers/>
+            </div>
+        </Provider>
+    );
 }
 
 export default App;

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="create transfers component">
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="create filter component">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\assets\img" />
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src" />
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test" />
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\data" />
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\store" />
+      <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\store\tickets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +55,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607506130894</updated>
       <workItem from="1607506132009" duration="85000" />
-      <workItem from="1607506227406" duration="17733000" />
+      <workItem from="1607506227406" duration="23165000" />
+      <workItem from="1607584267701" duration="12496000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
@@ -65,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607517137820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create filter component">
+      <created>1607526530293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607526530293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,10 +95,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial react" />
     <MESSAGE value="create transfers component" />
-    <option name="LAST_COMMIT_MESSAGE" value="create transfers component" />
+    <MESSAGE value="create filter component" />
+    <option name="LAST_COMMIT_MESSAGE" value="create filter component" />
   </component>
 </project>

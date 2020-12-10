@@ -5,13 +5,17 @@
     align-items: start;
   }
   &__list{
-    background: $white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 342px;
-    padding: 27px 0;
-    border-radius: 3px;
-    text-align: center;
+    &-content{
+      background: $white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 342px;
+      padding: 27px 0;
+      margin-bottom:15px;
+      border-radius: 3px;
+      text-align: center;
+    }
     &-line{
       display: flex;
       width: 100%;
