@@ -1,4 +1,5 @@
 export const FETCH_TICKETS = 'FETCH_TICKETS'
+export const INIT_DATA_TICKETS = 'INIT_DATA_TICKETS'
 
 export interface Tickets {
     id: string;
@@ -9,9 +10,9 @@ export interface TicketsState {
     tickets: Tickets[]
 }
 
-interface FetchTickets {
-    type: typeof FETCH_TICKETS
+interface InitTickets {
+    type: typeof INIT_DATA_TICKETS
     payload: Array<Tickets>
 }
 
-export type TicketsActionTypes = FetchTickets
+export type TicketsActionTypes = InitTickets

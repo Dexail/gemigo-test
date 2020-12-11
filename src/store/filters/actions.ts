@@ -1,7 +1,13 @@
-import {CHECKED_FILTER} from "./type";
+import {CHECKED_ALL_FILTER, CHECKED_FILTER} from "./type";
 
 
-export const checkedFilter = (idFilter:number) => ({
+export const checkedFilter = (id:number) => ({
     type: CHECKED_FILTER,
-    payload: idFilter
+    payload: id
+});
+
+
+export const checkedAllFilter = (id:number) => ({
+    type: CHECKED_ALL_FILTER,
+    payload: id
 });

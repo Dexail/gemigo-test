@@ -8,7 +8,7 @@ import {FiltersState, IFilter} from "../../store/filters/type";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {fetchData} from "../../store/tickets/actions";
-import {checkedFilter} from "../../store/filters/actions";
+import {checkedAllFilter, checkedFilter} from "../../store/filters/actions";
 
 type Props = {
 };
@@ -16,27 +16,23 @@ const Transfers = ({}: Props) => {
     const dispatch = useDispatch()
     let [ticketsList, setTicketsList] = useState<Tickets[]>([]);
     let [filterList, setFilterList] = useState<IFilter[]>([]);
-    let tickets = useSelector<TicketsState>(state => state.tickets);
-    let filters = useSelector<FiltersState>(state => state.filters);
+    let tickets = useSelector<TicketsState, Tickets[]>(state => state.tickets);
+    let filters = useSelector<FiltersState, IFilter[]>(state => state.filters);
 
     useEffect(() => {
-        dispatch(fetchData())
-    }, [])
-/*
-    useEffect(() => {
-        // @ts-ignore
-        setTicketsList(tickets)
-    }, [tickets])*/
+        if(tickets.length === 0)
+            dispatch(fetchData())
+        filterTickets()
+    }, [tickets])
 
     useEffect(() => {
-        // @ts-ignore
         setFilterList(filters)
         filterTickets()
     }, [filters])
 
-    const filterTickets = (): void => {debugger
+    const filterTickets = (): void => {
+        debugger
             if(tickets && filterList){
-                // @ts-ignore
                 setTicketsList(tickets.filter((ticket) => {
                     const filter:IFilter | undefined = filterList.find(filter => ticket.transfers === filter.id)
                     if(filter)
@@ -47,9 +43,11 @@ const Transfers = ({}: Props) => {
             }
     }
     const changeFilter = (id:number):void => {
-        debugger;
         console.log(id)
-        dispatch(checkedFilter(id))
+        if(id === -1)
+            dispatch(checkedAllFilter(id))
+        else
+            dispatch(checkedFilter(id))
     }
     return (
         <div className="transfers">

@@ -1,4 +1,4 @@
-import {TicketsState, TicketsActionTypes, FETCH_TICKETS, Tickets} from "./types";
+import {INIT_DATA_TICKETS, Tickets, TicketsActionTypes} from "./types";
 
 const initialState: Tickets[] = []
 const reducer = (
@@ -6,7 +6,7 @@ const reducer = (
     action: TicketsActionTypes
 ) => {
     switch (action.type) {
-        case FETCH_TICKETS :
+        case INIT_DATA_TICKETS :
             return [...state, ...action.payload]
         default:
             return state;
