@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="create tickets store">
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- create loader for tickets&#10;- disable filter during load tickets">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/Filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/Filter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/Transfers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/filters/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/filters/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/filters/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/filters/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/filters/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/filters/type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tickets/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tickets/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tickets/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/sagas.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tickets/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tickets/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,8 @@
       <workItem from="1607506132009" duration="85000" />
       <workItem from="1607506227406" duration="23165000" />
       <workItem from="1607584267701" duration="29723000" />
-      <workItem from="1607660769798" duration="7461000" />
+      <workItem from="1607660769798" duration="20106000" />
+      <workItem from="1607695519967" duration="4493000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
@@ -95,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607609461064</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- include saga">
+      <created>1607682829354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607682829354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
     <MESSAGE value="create transfers component" />
     <MESSAGE value="create filter component" />
     <MESSAGE value="create tickets store" />
-    <option name="LAST_COMMIT_MESSAGE" value="create tickets store" />
+    <MESSAGE value="- include saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="- include saga" />
   </component>
 </project>

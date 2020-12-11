@@ -1,7 +1,7 @@
-import {takeEvery, put, call, delay, all} from 'redux-saga/effects'
-import axios from "axios"
+import {takeEvery, put, call, delay} from 'redux-saga/effects'
 import {FETCH_TICKETS, INIT_DATA_TICKETS} from "./types";
 import dataJSON from "../../data.json"
+import {hideLoader, showLoader} from "./actions";
 
 export function* sagaWatcher() {
     yield takeEvery(FETCH_TICKETS, sagaWorker)
@@ -9,9 +9,11 @@ export function* sagaWatcher() {
 
 function* sagaWorker() {
     try {
+        yield put(showLoader())
         yield delay(3000)
         const payload = yield call(fetchPosts)
         yield put({type: INIT_DATA_TICKETS, payload})
+        yield put(hideLoader())
     } catch (e) {
     }
 }

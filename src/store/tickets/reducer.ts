@@ -1,13 +1,20 @@
-import {INIT_DATA_TICKETS, Tickets, TicketsActionTypes} from "./types";
+import {HIDE_LOADER, INIT_DATA_TICKETS, SHOW_LOADER, TicketsActionTypes, TicketsState} from "./types";
 
-const initialState: Tickets[] = []
+const initialState: TicketsState = {
+    isLoading: true,
+    data: []
+}
 const reducer = (
-    state: Tickets[] = initialState,
+    state: TicketsState = initialState,
     action: TicketsActionTypes
 ) => {
     switch (action.type) {
         case INIT_DATA_TICKETS :
-            return [...state, ...action.payload]
+            return {...state, data: [...action.payload]}
+        case SHOW_LOADER :
+            return {...state, isLoading: true}
+        case HIDE_LOADER :
+            return {...state, isLoading: false}
         default:
             return state;
     }

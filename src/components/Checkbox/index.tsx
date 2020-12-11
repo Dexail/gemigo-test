@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import "./Checkbox.scss"
 
 type Props = {
@@ -7,13 +6,14 @@ type Props = {
     value:string;
     isChecked: boolean;
     changeFilter(id:number):void;
+    disabled:boolean,
 };
-const Checkbox = ({id, value, isChecked, changeFilter}: Props) => {
+const Checkbox = ({id, value, isChecked, changeFilter, disabled = false}: Props) => {
     return (
-        <>
-            <input type="checkbox" key={id} onClick={(e)=> changeFilter(id)} className="checkbox" checked={isChecked} id={id.toString()} name={value} value={value}/>
+        <div className={`${disabled ? "disabled" : ""}`}>
+            <input type="checkbox" key={id} disabled={disabled} onClick={(e)=> changeFilter(id)} className="checkbox" checked={isChecked} id={id.toString()} name={value} value={value}/>
             <label htmlFor={id.toString()}>{value}</label>
-        </>
+        </div>
     );
 };
 
