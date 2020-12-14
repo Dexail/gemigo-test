@@ -1,11 +1,20 @@
 @import '../../styles/variables';
+@import "../../styles/media_mixin";
+
 .transfers{
   &__content{
     display: flex;
     align-items: start;
+    @include _768 {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__list{
     width: 100%;
+    @include _768 {
+      max-width: 310px;
+    }
     &-content{
       background: $white;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
