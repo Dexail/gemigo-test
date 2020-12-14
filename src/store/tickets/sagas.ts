@@ -10,7 +10,7 @@ export function* sagaWatcher() {
 function* sagaWorker() {
     try {
         yield put(showLoader())
-        yield delay(3000)
+        yield delay(1300)
         const payload = yield call(fetchPosts)
         yield put({type: INIT_DATA_TICKETS, payload})
         yield put(hideLoader())

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix" />
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +37,23 @@
       <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\store\tickets" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +73,8 @@
       <workItem from="1607925772830" duration="5088000" />
       <workItem from="1607932067805" duration="7840000" />
       <workItem from="1607942094387" duration="174000" />
+      <workItem from="1607942841335" duration="429000" />
+      <workItem from="1607943326631" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
