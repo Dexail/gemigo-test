@@ -10,12 +10,21 @@ import {IFilter} from "../../store/filters/type";
 
 import "./Transfers.scss";
 
+enum SortType {
+    ASC = 1,
+    DESC = 0
+}
+
 type Props = {};
 const Transfers = ({}: Props) => {
     const dispatch = useDispatch()
+    const sortBy: SortType = SortType.ASC;
     const [ticketsList, setTicketsList] = useState<ITicket[]>([]);
     const [filterList, setFilterList] = useState<IFilter[]>([]);
-    const {isLoading, data: tickets}: {isLoading: boolean, data: ITicket[]} = useSelector(({tickets}: { tickets: TicketsState }) => tickets);
+    const {
+        isLoading,
+        data: tickets
+    }: { isLoading: boolean, data: ITicket[] } = useSelector(({tickets}: { tickets: TicketsState }) => tickets);
     const filters: IFilter[] = useSelector(({filters}: { filters: IFilter[] }) => filters);
 
     useEffect(() => {
@@ -34,7 +43,8 @@ const Transfers = ({}: Props) => {
     const filterTickets = (id?: number): void => {
         if (tickets && tickets.length > 0 && filterList) {
             if (id === undefined) {
-                setTicketsList(tickets.filter((ticket) => {
+                const result = sortFilter(tickets, sortBy)
+                setTicketsList(result.filter((ticket) => {
                     const filter: IFilter | undefined = filterList.find(filter => ticket.transfers === filter.id)
                     return filter ? filter.isChecked : false
                 }))
@@ -46,9 +56,18 @@ const Transfers = ({}: Props) => {
         }
     }
 
+    const sortFilter = (data: ITicket[], typeSort: SortType): ITicket[] =>
+        data.sort((a, b) => {
+            if (typeSort)
+                return a.transfers > b.transfers ? 1 : (b.transfers > a.transfers) ? -1 : 0
+            else
+                return a.transfers < b.transfers ? 1 : (b.transfers < a.transfers) ? -1 : 0
+
+        })
+
     const resetFilters = (id?: number): void => {
         dispatch(resetFilter())
-        if(id !== undefined)
+        if (id !== undefined)
             changeFilter(id)
     }
 
