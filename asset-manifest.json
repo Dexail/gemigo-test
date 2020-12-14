@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gemigo-test/static/css/main.8f80246a.chunk.css",
+    "main.js": "/gemigo-test/static/js/main.d3d87738.chunk.js",
+    "main.js.map": "/gemigo-test/static/js/main.d3d87738.chunk.js.map",
+    "runtime-main.js": "/gemigo-test/static/js/runtime-main.eaa64322.js",
+    "runtime-main.js.map": "/gemigo-test/static/js/runtime-main.eaa64322.js.map",
+    "static/js/2.28af5056.chunk.js": "/gemigo-test/static/js/2.28af5056.chunk.js",
+    "static/js/2.28af5056.chunk.js.map": "/gemigo-test/static/js/2.28af5056.chunk.js.map",
+    "static/js/3.6439e0eb.chunk.js": "/gemigo-test/static/js/3.6439e0eb.chunk.js",
+    "static/js/3.6439e0eb.chunk.js.map": "/gemigo-test/static/js/3.6439e0eb.chunk.js.map",
+    "index.html": "/gemigo-test/index.html",
+    "static/css/main.8f80246a.chunk.css.map": "/gemigo-test/static/css/main.8f80246a.chunk.css.map",
+    "static/js/2.28af5056.chunk.js.LICENSE.txt": "/gemigo-test/static/js/2.28af5056.chunk.js.LICENSE.txt",
+    "static/media/plane.e4fe2c92.svg": "/gemigo-test/static/media/plane.e4fe2c92.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eaa64322.js",
+    "static/js/2.28af5056.chunk.js",
+    "static/css/main.8f80246a.chunk.css",
+    "static/js/main.d3d87738.chunk.js"
+  ]
+}
