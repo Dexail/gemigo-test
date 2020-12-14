@@ -5,7 +5,7 @@ import {Filter, Loader} from "../index";
 
 import {fetchData} from "../../store/tickets/actions";
 import {ITicket, TicketsState} from "../../store/tickets/types";
-import {checkedAllFilter, checkedFilter} from "../../store/filters/actions";
+import {checkedAllFilter, checkedFilter, resetFilter} from "../../store/filters/actions";
 import {IFilter} from "../../store/filters/type";
 
 import "./Transfers.scss";
@@ -45,6 +45,13 @@ const Transfers = ({}: Props) => {
             }
         }
     }
+
+    const resetFilters = (id?: number): void => {
+        dispatch(resetFilter())
+        if(id !== undefined)
+            changeFilter(id)
+    }
+
     const changeFilter = (id: number): void => {
         if (id === -1)
             dispatch(checkedAllFilter(id))
@@ -54,7 +61,7 @@ const Transfers = ({}: Props) => {
     return (
         <div className="transfers">
             <div className="transfers__content">
-                <Filter filterTickets={filterTickets} disabled={isLoading} changeFilter={changeFilter}
+                <Filter resetFilters={resetFilters} disabled={isLoading} changeFilter={changeFilter}
                         filters={filterList}/>
                 <div className="transfers__list">
                     {isLoading ?

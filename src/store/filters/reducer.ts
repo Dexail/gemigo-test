@@ -1,4 +1,4 @@
-import {CHECKED_ALL_FILTER, CHECKED_FILTER, FiltersActionTypes, IFilter} from "./type";
+import {CHECKED_ALL_FILTER, CHECKED_FILTER, FiltersActionTypes, IFilter, RESET_FILTER} from "./type";
 
 const initialState: IFilter[] = [
     {
@@ -49,6 +49,11 @@ const reducer = (
             })
             return state.map(filter => {
                 filter.isChecked = checked;
+                return filter;
+            })
+        case RESET_FILTER :
+            return state.map(filter => {
+                filter.isChecked = false;
                 return filter;
             })
         default:

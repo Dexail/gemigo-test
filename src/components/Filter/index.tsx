@@ -7,9 +7,9 @@ type Props = {
     filters: IFilter[],
     disabled: boolean,
     changeFilter: (id: number) => void,
-    filterTickets: (id?: number) => void
+    resetFilters: (id?: number) => void
 };
-const Filter = ({filters, changeFilter, disabled, filterTickets}: Props) => {
+const Filter = ({filters, changeFilter, disabled, resetFilters}: Props) => {
     return (
         <div className="transfers__filter">
             <h2>Number of transfers</h2>
@@ -19,7 +19,7 @@ const Filter = ({filters, changeFilter, disabled, filterTickets}: Props) => {
                         return (
                             <div key={filter.id}>
                                 <Checkbox disabled={disabled} changeFilter={changeFilter} {...filter}/>
-                                {filter.id !== -1 ? (<Button key={filter.id} title="Only" clickButton={filterTickets}disabled={disabled} value={filter.id}/>):(<></>)}
+                                {filter.id !== -1 ? (<Button key={filter.id} title="Only" clickButton={resetFilters} disabled={disabled} value={filter.id}/>):(<></>)}
                             </div>
                         )
                     }))

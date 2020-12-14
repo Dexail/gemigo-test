@@ -1,5 +1,6 @@
 export const CHECKED_FILTER = 'CHECKED_FILTER'
 export const CHECKED_ALL_FILTER = 'CHECKED_ALL_FILTER'
+export const RESET_FILTER = 'RESET_FILTER'
 
 export interface IFilter {
     id: number;
@@ -21,4 +22,8 @@ interface checkedAllFilter {
     payload: number
 }
 
-export type FiltersActionTypes = ChangeFilters | checkedAllFilter
+interface resetFilter {
+    type: typeof RESET_FILTER
+}
+
+export type FiltersActionTypes = ChangeFilters | checkedAllFilter | resetFilter
