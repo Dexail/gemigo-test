@@ -28,15 +28,18 @@ const Transfers = ({}: Props) => {
         filterTickets()
     }, [filters])
 
-    const filterTickets = (): void => {
+    const filterTickets = (id?: number): void => {
         if (tickets && tickets.length > 0 && filterList) {
-            setTicketsList(tickets.filter((ticket) => {
-                const filter: IFilter | undefined = filterList.find(filter => ticket.transfers === filter.id)
-                if (filter)
-                    return filter.isChecked
-                else
-                    return false
-            }))
+            if (id === undefined) {
+                setTicketsList(tickets.filter((ticket) => {
+                    const filter: IFilter | undefined = filterList.find(filter => ticket.transfers === filter.id)
+                    return filter ? filter.isChecked : false
+                }))
+            } else {
+                setTicketsList(tickets.filter((ticket) => {
+                    return ticket.transfers === id ?? false
+                }))
+            }
         }
     }
     const changeFilter = (id: number): void => {
@@ -48,7 +51,7 @@ const Transfers = ({}: Props) => {
     return (
         <div className="transfers">
             <div className="transfers__content">
-                <Filter disabled={isLoading} changeFilter={changeFilter} filters={filterList}/>
+                <Filter filterTickets={filterTickets} disabled={isLoading} changeFilter={changeFilter} filters={filterList}/>
                 <div className="transfers__list">
                     {isLoading ?
                         (<div className="transfers__list-content"><Loader/></div>)
@@ -63,7 +66,7 @@ const Transfers = ({}: Props) => {
                                         )
                                     }))
                                     :
-                                    (<div className="transfers__list-content"><p>No Transfers</p></div>)
+                                    (<div className="transfers__list-content"><p>Empty list</p></div>)
                             }
                         </>
                     }
