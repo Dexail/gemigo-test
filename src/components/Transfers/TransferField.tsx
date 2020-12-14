@@ -4,11 +4,12 @@ import planeSvg from "../../assets/img/plane.svg";
 type Props = {
     transfers:number
 };
-const TransferField = (props: Props) => {
+const TransferField = ({transfers}: Props) => {
+    const title = transfers === 1 ? "Transfer" : "Transfers"
     return (
         <div className="transfers__list-content">
-            {props.transfers  > 0 ?
-                (<p> {props.transfers} Transfers</p>)
+            {transfers  > 0 ?
+                (<p> {transfers} {title}</p>)
             :
                 (<p>No transfer</p>)
             }

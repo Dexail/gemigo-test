@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +22,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gamigo-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/CheckboxFilterOnReactJS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.space" />
-    <property name="ts.external.directory.path" value="D:\OSPaanel\OSPanel\domains\React\gamigo-test\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\OSPaanel\OSPanel\domains\React\gemigo-test\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -37,7 +37,7 @@
       <recent name="D:\OSPaanel\OSPanel\domains\React\gamigo-test\src\store\tickets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -48,8 +48,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
@@ -75,6 +86,7 @@
       <workItem from="1607942094387" duration="174000" />
       <workItem from="1607942841335" duration="429000" />
       <workItem from="1607943326631" duration="281000" />
+      <workItem from="1607944181968" duration="1693000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
