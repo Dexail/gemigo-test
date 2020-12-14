@@ -19,7 +19,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gamigo-test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.space" />
     <property name="ts.external.directory.path" value="D:\OSPaanel\OSPanel\domains\React\gamigo-test\node_modules\typescript\lib" />
@@ -52,6 +52,7 @@
       <workItem from="1607923301144" duration="1189000" />
       <workItem from="1607925772830" duration="5088000" />
       <workItem from="1607932067805" duration="7840000" />
+      <workItem from="1607942094387" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
