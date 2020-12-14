@@ -18,8 +18,10 @@ const Transfers = ({}: Props) => {
     const filters = useSelector(({filters}: { filters: IFilter[] }) => filters);
 
     useEffect(() => {
-        if (tickets.length === 0)
-            dispatch(fetchData())
+        dispatch(fetchData())
+    },[])
+
+    useEffect(() => {
         filterTickets()
     }, [tickets])
 
@@ -58,7 +60,7 @@ const Transfers = ({}: Props) => {
                         :
                         <>
                             {
-                                ticketsList.length > 0 ?
+                                ticketsList !== null && ticketsList.length > 0 ?
                                     (ticketsList.map((ticket, index) => {
                                         return (
                                             <TransferField transfers={ticket.transfers}
