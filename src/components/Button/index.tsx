@@ -4,7 +4,7 @@ import "./Button.scss"
 type Props = {
     title: string;
     value:number;
-    clickButton(id:number):void;
+    clickButton: (id:number) => void;
     disabled:boolean,
 };
 const Checkbox = ({title, value, clickButton, disabled = false}: Props) => {

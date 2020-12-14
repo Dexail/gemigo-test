@@ -28,7 +28,7 @@ const reducer = (
     state: IFilter[] = initialState,
     action: FiltersActionTypes
 ) => {
-    let checked: boolean = true
+    let checked = true
     switch (action.type) {
         case CHECKED_FILTER :
             let checkboxAll = state.find(filter => filter.id === -1)

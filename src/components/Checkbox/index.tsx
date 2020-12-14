@@ -5,7 +5,7 @@ type Props = {
     id:number;
     value:string;
     isChecked: boolean;
-    changeFilter(id:number):void;
+    changeFilter: (id:number) => void;
     disabled:boolean,
 };
 const Checkbox = ({id, value, isChecked, changeFilter, disabled = false}: Props) => {

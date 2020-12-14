@@ -7,7 +7,7 @@ type Props = {
 const TransferField = (props: Props) => {
     return (
         <div className="transfers__list-content">
-            {props.transfers && props.transfers  > 0 ?
+            {props.transfers  > 0 ?
                 (<p> {props.transfers} Transfers</p>)
             :
                 (<p>No transfer</p>)

@@ -15,8 +15,8 @@ const Transfers = ({}: Props) => {
     const dispatch = useDispatch()
     const [ticketsList, setTicketsList] = useState<ITicket[]>([]);
     const [filterList, setFilterList] = useState<IFilter[]>([]);
-    const {isLoading, data: tickets} = useSelector(({tickets}: { tickets: TicketsState }) => tickets);
-    const filters = useSelector(({filters}: { filters: IFilter[] }) => filters);
+    const {isLoading, data: tickets}: {isLoading: boolean, data: ITicket[]} = useSelector(({tickets}: { tickets: TicketsState }) => tickets);
+    const filters: IFilter[] = useSelector(({filters}: { filters: IFilter[] }) => filters);
 
     useEffect(() => {
         dispatch(fetchData())
@@ -63,9 +63,9 @@ const Transfers = ({}: Props) => {
                         <>
                             {
                                 ticketsList !== null && ticketsList.length > 0 ?
-                                    (ticketsList.map((ticket, index) => {
+                                    (ticketsList.map((ticket) => {
                                         return (
-                                            <TransferField transfers={ticket.transfers}
+                                            <TransferField key={ticket.id} transfers={ticket.transfers}
                                             />
                                         )
                                     }))

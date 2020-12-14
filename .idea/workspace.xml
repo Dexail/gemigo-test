@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix &quot;disable&quot; css">
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Filter/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/TransferField.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/filters/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/filters/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +62,7 @@
       <workItem from="1607923130415" duration="31000" />
       <workItem from="1607923301144" duration="1189000" />
       <workItem from="1607925772830" duration="5088000" />
-      <workItem from="1607932067805" duration="2101000" />
+      <workItem from="1607932067805" duration="5247000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
@@ -126,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607933890034</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- fix">
+      <created>1607934219889</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607934219889</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +169,7 @@
     <MESSAGE value="- create button &quot;Only&quot;" />
     <MESSAGE value="- fix tickets fetch data" />
     <MESSAGE value="- fix &quot;disable&quot; css" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix &quot;disable&quot; css" />
+    <MESSAGE value="- fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix" />
   </component>
 </project>
