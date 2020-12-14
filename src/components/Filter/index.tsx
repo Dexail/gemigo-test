@@ -24,7 +24,7 @@ const Filter = ({filters, changeFilter, disabled, filterTickets}: Props) => {
                         )
                     }))
                     :
-                    (<p>KCD</p>)
+                    (<p>Empty list</p>)
                 }
             </div>
         </div>

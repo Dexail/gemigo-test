@@ -3,11 +3,12 @@ import {useDispatch, useSelector} from "react-redux";
 import TransferField from "./TransferField";
 import {Filter, Loader} from "../index";
 
-import "./Transfers.scss";
 import {fetchData} from "../../store/tickets/actions";
 import {ITicket, TicketsState} from "../../store/tickets/types";
 import {checkedAllFilter, checkedFilter} from "../../store/filters/actions";
 import {IFilter} from "../../store/filters/type";
+
+import "./Transfers.scss";
 
 type Props = {};
 const Transfers = ({}: Props) => {
