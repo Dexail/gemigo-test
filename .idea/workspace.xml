@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- create button &quot;Only&quot;">
+    <list default="true" id="720bcef0-180b-470c-ae85-79149fafd359" name="Default Changelist" comment="- fix tickets fetch data">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/Filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/Filter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Transfers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Transfers/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.space" />
     <property name="ts.external.directory.path" value="D:\OSPaanel\OSPanel\domains\React\gamigo-test\node_modules\typescript\lib" />
@@ -55,7 +56,8 @@
       <workItem from="1607866515882" duration="4457000" />
       <workItem from="1607923130415" duration="31000" />
       <workItem from="1607923301144" duration="1189000" />
-      <workItem from="1607925772830" duration="4877000" />
+      <workItem from="1607925772830" duration="5088000" />
+      <workItem from="1607932067805" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="Initial react">
       <created>1607510855939</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607930009389</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- fix tickets fetch data">
+      <created>1607931822142</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607931822142</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +148,7 @@
     <MESSAGE value="- include saga" />
     <MESSAGE value="- create loader for tickets&#10;- disable filter during load tickets" />
     <MESSAGE value="- create button &quot;Only&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- create button &quot;Only&quot;" />
+    <MESSAGE value="- fix tickets fetch data" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix tickets fetch data" />
   </component>
 </project>

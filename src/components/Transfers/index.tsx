@@ -19,7 +19,7 @@ const Transfers = ({}: Props) => {
 
     useEffect(() => {
         dispatch(fetchData())
-    },[])
+    }, [])
 
     useEffect(() => {
         filterTickets()
@@ -53,7 +53,8 @@ const Transfers = ({}: Props) => {
     return (
         <div className="transfers">
             <div className="transfers__content">
-                <Filter filterTickets={filterTickets} disabled={isLoading} changeFilter={changeFilter} filters={filterList}/>
+                <Filter filterTickets={filterTickets} disabled={isLoading} changeFilter={changeFilter}
+                        filters={filterList}/>
                 <div className="transfers__list">
                     {isLoading ?
                         (<div className="transfers__list-content"><Loader/></div>)
