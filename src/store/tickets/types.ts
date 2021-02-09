@@ -12,6 +12,7 @@ export interface TicketsState {
     isLoading: boolean,
     data: ITicket[]
 }
+/* teste */
 
 interface InitTickets {
     type: typeof INIT_DATA_TICKETS
