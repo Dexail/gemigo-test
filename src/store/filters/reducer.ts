@@ -9,7 +9,7 @@ const initialState: IFilter[] = [
     {
         id: 0,
         value: "No transfers",
-        isChecked: true
+        isChecked: false
     }, {
         id: 1,
         value: "1 Transfer",
